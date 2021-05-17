@@ -1,15 +1,110 @@
-:root {
-  --bg-color: #F6F6F9;
-  --font-color: #295091;
-  --dark-violet: #515151;
+:root{
+  --money-color: #285193;
+  --money-text-color: #7A7A7A;
+  --nav-text-color: #515151;
 }
-* {
+html{
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Rubik", sans-serif;
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #434343;
+}
+/* container  */
+.container{
+  max-width: 1240px;
+  padding: 0 20px;
   margin: 0 auto;
-  font-style: normal;
-  font-weight: normal;
+}
+
+/* site-header  */
+.site-header{
+  border-top: 4px solid #295093;;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #f6f6f9;
+
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.top-header__exchange{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+.exchange__item{
+  margin-right: 25px;
+}
+.top-header__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 260px;
+}
+.top-header__items-lang{
+   padding: 10px;
+}
+.top-header__items-lang img{
+  border-radius: 50px;
+}
+.top-header__items-telegram{
+  margin-left: 40px;
+}
+.top-header__items-search{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff ;
+}
+.top-header__items-lang{
+  margin-left: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff ;
+}
+.telegram-link{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 30px;
+  color: #fff;
+}
+.telegram-link img{
+  margin-right: 7px;
+}
+.site-nav{
+  margin-bottom: 18px;
+}
+.site-nav__list{
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 22px;
+}
+.site-nav__item:not(:first-child){
+  margin-left: 30px;
+}
+.site-nav__link{
+  text-decoration: none;
+  display: inline-block;
+  color: #515151;
 }
